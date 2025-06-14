@@ -5,7 +5,7 @@ import os
 
 # Load API key from .env file
 load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="Babu Rao ChatGPT", page_icon="🎩")
 
